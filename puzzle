@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search Puzzle Master Key</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --hard-color: #e67e22;
+            --impossible-color: #c0392b;
+            --bg-color: #f5f7fa;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Instructions Box */
+        .instructions {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+        .level-section {
+            margin-bottom: 50px;
+            border-top: 4px solid var(--primary-color);
+            padding-top: 20px;
+        }
+        .level-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .puzzle-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            padding: 25px;
+            page-break-inside: avoid;
+        }
+        .puzzle-header {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .puzzle-header h3 {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        .puzzle-meta {
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Grid Layout for Images */
+        .images-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .image-box {
+            text-align: center;
+            background: #eee;
+            border-radius: 8px;
+            padding: 10px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed #ccc;
+            position: relative;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: block; /* Hidden by default if broken via JS */
+        }
+        .image-label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: var(--primary-color);
+            background: rgba(255,255,255,0.9);
+            padding: 5px 15px;
+            border-radius: 15px;
+        }
+
+        /* Error Message for Missing Images */
+        .missing-img-msg {
+            display: none;
+            color: #721c24;
+            background-color: #f8d7da;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            width: 90%;
+        }
+
+        .word-list {
+            background-color: #eef2f7;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        /* Print Optimization */
+        @media print {
+            body { background-color: white; }
+            .instructions { display: none; }
+            .puzzle-card { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
+            .image-box { border: none; background: none; min-height: auto; }
+        }
+        @media (max-width: 768px) {
+            .images-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="instructions">
+        <strong>⚠️ detailed instructions:</strong><br>
+        1. Download this HTML file.<br>
+        2. Move it to the <strong>same folder/location</strong> where you saved the puzzle images.<br>
+        3. Open the file in your browser (Chrome, Safari, etc.). The images will appear!
+    </div>
+
+    <h1>Word Search Answer Key</h1>
+
+    <!-- LEVEL 1 -->
+    <div class="level-section" style="border-color: #27ae60;">
+        <h2 class="level-title" style="background-color: #27ae60;">Level 1: Easy</h2>
+        
+        <!-- Puzzle 1 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>1. The Active Body</h3>
+                <div class="puzzle-meta">Theme: Movement</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059984.png" onerror="showError(this, '1000059984.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059984.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059985.png" onerror="showError(this, '1000059985.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059985.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> DANCE, MOVE, RUN, SPORT, WALK
+            </div>
+        </div>
+
+        <!-- Puzzle 2 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>2. The Hydration Station</h3>
+                <div class="puzzle-meta">Theme: Water</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059983.png" onerror="showError(this, '1000059983.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059983.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059982.png" onerror="showError(this, '1000059982.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059982.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> BRAIN, DRINK, GLASS, THIRST, WATER
+            </div>
+        </div>
+
+        <!-- Puzzle 3 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>3. Sleep & Rest</h3>
+                <div class="puzzle-meta">Theme: Bedtime</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000060077.png" onerror="showError(this, '1000060077.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000060077.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000060078.png" onerror="showError(this, '1000060078.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000060078.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> NIGHTMARE, DREAM, SLEEP, REST, NAP, SNORE, BED
+            </div>
+        </div>
+
+        <!-- Puzzle 4 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>4. Kindness</h3>
+                <div class="puzzle-meta">Theme: Emotions</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000060079.png" onerror="showError(this, '1000060079.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000060079.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000060080.png" onerror="showError(this, '1000060080.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000060080.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> LOVE, KINDNESS, FRIEND, HAPPY, SMILE, HELP, SHARE, CARE
+            </div>
+        </div>
+    </div>
+
+    <!-- LEVEL 2 -->
+    <div class="level-section" style="border-color: #3498db;">
+        <h2 class="level-title" style="background-color: #3498db;">Level 2: Intermediate</h2>
+
+        <!-- Puzzle 5 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>5. The Five Senses</h3>
+                <div class="puzzle-meta">Theme: Sensory</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059986.png" onerror="showError(this, '1000059986.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059986.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059987.png" onerror="showError(this, '1000059987.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059987.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> SENSES, SIGHT, SMELL, TOUCH, TASTE, NOSE, EARS, EYES, SKIN
+            </div>
+        </div>
+
+        <!-- Puzzle 6 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>6. Journaling</h3>
+                <div class="puzzle-meta">Theme: Writing</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059988.png" onerror="showError(this, '1000059988.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059988.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059989.png" onerror="showError(this, '1000059989.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059989.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> JOURNAL, WRITE, SELF, EXPRESS, DIARY, REFLECTION, THOUGHTS
+            </div>
+        </div>
+
+        <!-- Puzzle 7 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>7. Healthy Boundaries</h3>
+                <div class="puzzle-meta">Theme: Mental Health</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059990.png" onerror="showError(this, '1000059990.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059990.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059991.png" onerror="showError(this, '1000059991.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059991.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> RESPECT, PRIORITY, BOUNDARIES, BURNOUT, SAFETY
+            </div>
+        </div>
+
+        <!-- Puzzle 8 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>8. Breath & Relaxation</h3>
+                <div class="puzzle-meta">Theme: Calming</h3>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059992.png" onerror="showError(this, '1000059992.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059992.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059993.png" onerror="showError(this, '1000059993.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059993.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> EXHALE, BREATHE, CALM, OXYGEN, LUNGS, RELAX, AIR
+            </div>
+        </div>
+    </div>
+
+    <!-- LEVEL 3 -->
+    <div class="level-section" style="border-color: #e67e22;">
+        <h2 class="level-title" style="background-color: #e67e22;">Level 3: Hard</h2>
+
+        <!-- Puzzle 9 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>9. Critical Thinking</h3>
+                <div class="puzzle-meta">Theme: Logic</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059994.png" onerror="showError(this, '1000059994.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059994.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059995.png" onerror="showError(this, '1000059995.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059995.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> ANALYSIS, CRITICAL, LOGIC, REASON, THINKING, PROBLEM, SOLVE, BRAIN
+            </div>
+        </div>
+
+        <!-- Puzzle 10 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>10. Neuroscience</h3>
+                <div class="puzzle-meta">Theme: Brain Biology</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059996.png" onerror="showError(this, '1000059996.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059996.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059997.png" onerror="showError(this, '1000059997.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059997.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> NEURON, EQUILIBRIUM, SYNAPSE, AXON, BRAINSTEM, CEREBELLUM, CORTEX
+            </div>
+        </div>
+    </div>
+
+    <!-- LEVEL 4 -->
+    <div class="level-section" style="border-color: #c0392b;">
+        <h2 class="level-title" style="background-color: #c0392b;">Level 4: Impossible</h2>
+
+        <!-- Puzzle 11 -->
+        <div class="puzzle-card">
+            <div class="puzzle-header">
+                <h3>11. The Psychology Challenge</h3>
+                <div class="puzzle-meta">Theme: Resilience</div>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="1000059998.png" onerror="showError(this, '1000059998.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059998.png</b> is in the same folder.</div>
+                    <span class="image-label">Puzzle</span>
+                </div>
+                <div class="image-box">
+                    <img src="1000059999.png" onerror="showError(this, '1000059999.png')">
+                    <div class="missing-img-msg">Image missing.<br>Ensure <b>1000059999.png</b> is in the same folder.</div>
+                    <span class="image-label">Solution</span>
+                </div>
+            </div>
+            <div class="word-list">
+                <strong>Words:</strong> ADAPTABILITY, AWARENESS, COGNITION, MINDSET, PERCEPTION, PSYCHE, RESILIENCE, SELF EFFICACY, SUBCONSCIOUS
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showError(img, filename) {
+            img.style.display = 'none';
+            // Find the missing-img-msg div which is the next sibling
+            var msgDiv = img.nextElementSibling;
+            if (msgDiv && msgDiv.classList.contains('missing-img-msg')) {
+                msgDiv.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
